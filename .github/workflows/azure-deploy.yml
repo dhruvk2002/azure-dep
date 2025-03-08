@@ -24,7 +24,7 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Zip the application files
         run: zip -r flask_app.zip . -x "*.git*"
